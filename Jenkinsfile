@@ -20,7 +20,7 @@ pipeline {
         }
             stage('Deploy') {
                 steps {
-                    deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://192.168.0.137:8080')], contextPath: 'Tomcat_war.war', war: 'target/Tomcat_war.war'
+                    deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://192.168.58.114:8080')], contextPath: 'Tomcat_war.war', war: 'target/Tomcat_war.war'
                 }
             }
     }
