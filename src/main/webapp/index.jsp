@@ -1,5 +1,25 @@
-<html>
+<!DOCTYPE html>
+<head>
+	<title>HTML and CSS "Hello World"</title>
+	<style>
+		body {
+			background-color: #2D2D2D;
+		}
+		
+		h1 {
+			color: #C26356;
+			font-size: 30px;
+			font-family: Menlo, Monaco, fixed-width;
+		}
+		
+		p {
+			color: white;
+			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+		}
+	</style>
+</head>
 <body>
-<h2>Hello world ! deploy war file succesfull on EC2</h2>
+	<h1>Hello World Example</h1>
+	<p>This is the newest tomcat build after webhook integration with a message.</p>
 </body>
 </html>
