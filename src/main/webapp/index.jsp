@@ -20,6 +20,6 @@
 </head>
 <body>
 	<h1>Hello World Example</h1>
-	<p>This is the newest tomcat build after webhook integration with a message and deployed via ansible and did it with a single publish over ssh stage and now the pipeline is git-->jenkins-->ansible-->docker-->Tomcat_war_app.</p>
+	<p>This is the newest tomcat build after webhook integration with a message and deployed via ansible and did it with a single publish over ssh stage and now the pipeline is git-->jenkins-->ansible-->docker-->Tomcat_war_app and this is test2.</p>
 </body>
 </html>
