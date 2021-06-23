@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment #the type of resource to be created
+metadata:
+  creationTimestamp: null
+  labels:
+    app: first
+  name: first
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: first #the name given to select through other yaml files
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: first
+    spec:
+      containers:
+      - image: shivaswaroop40/devopsjenk:latest #the image to be built using docker
+        name: devopsjenk #the name of the container
+        resources: {}
+status: {}
