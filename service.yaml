@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Loadbslancer #type of resource to br created
+metadata:
+  name: devopsjenk #name of the service
+  labels:
+    name: first-svc
+    app: first-svc
+spec:
+  selector:
+    app: first #selector of the deployment
+  type: NodePort #port to be exposed in order to access on the browser
+  ports:
+   - port: 8080
+     name: http
+     targetPort: 8080
+     nodePort: 31000
+     protocol: TCP
